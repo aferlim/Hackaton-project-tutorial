@@ -37,7 +37,8 @@
     ![](img/ter2.png)
 22. Execute o comando `aws codepipeline deregister-webhook-with-third-party --webhook-name <webhook-name> --region=us-east-1` colando o nome do webhook que copiou no lugar de '< webhook-name >". Isso irá desativar o webhook e o pipeline não será executado cada vez que você fizer commit no seu repositório.
     
-> 22.A  Faça o commit das alterções no seu repositório.
+22.a  Faça o commit das alterções no seu repositório.
+
 23. Agora vamos subir a api que irá ser a responsável por ativar o pipeline cada vez que for chamada. Mas antes precisamos criar um virtual env para o python. Para isso execute os comandos a seguir no terminal do cloud9, ao final verá que o inicio da linha do terminal tem  escrição `(venv)`:
     ```
     python3 -m pip install --user virtualenv
